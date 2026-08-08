@@ -1,26 +1,28 @@
-# Lab Assignment 1
+# Computer Graphics and Multimedia
 
-## OpenGL Magenta Window
+## Course Information
 
-### Description
-This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**.
+| Information | Details |
+|---|---|
+| **Course Name** | Computer Graphics and Multimedia |
+| **Student Name** | Mahbuba Afrose Tarin |
+| **Student ID** | 0432410005101032 |
+| **Section** | 6A2 |
 
-### Features
-- Window size: **800 × 600**
-- Window title: **Mahbuba Afrose Tarin**
-- Background color: **Magenta**
-- Press **M** to close the window
-- Supports window resizing
+## About This Repository
 
-### Technologies
-- C++
-- OpenGL 3.3
-- GLFW
-- GLAD
-- Visual Studio Code
+This repository contains all the **lab assignments** for the course **Computer Graphics and Multimedia**.
 
-### Output
-The program displays a magenta OpenGL window with the title **Mahbuba Afrose Tarin**. Pressing **M** closes the window.
+Each lab assignment will be added separately in its own folder with the required source code, resources, screenshots, and documentation.
 
-### Author
-**Mahbuba Afrose Tarin**
+---
+
+## Course Faculty
+
+### Audity Ghosh
+
+**Lecturer, Dept. of CSE, UITS**
+
+### Sirajam Samira
+
+**Lecturer, Dept. of CSE, UITS**
