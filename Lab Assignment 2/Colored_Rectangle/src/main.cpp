@@ -17,7 +17,7 @@ int main()
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
 
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
@@ -55,8 +55,23 @@ int main()
         // -----
         processInput(window); //handle keyboard or mouse input.
         // changing the window color here using this two lines. mahbuba
-        glClearColor(1.0f, 0.0f, 1.0f, 1.0f);
+        glClearColor(1.0f, 1.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+        glBegin(GL_TRIANGLES);
+
+        glColor3f(0.0f, 1.0f, 0.0f);
+
+        // First triangle
+        glVertex2f(-0.6f, 0.5f);
+        glVertex2f(0.6f, 0.5f);
+        glVertex2f(0.6f, -0.5f);
+
+        // Second triangle
+        glVertex2f(-0.6f, 0.5f);
+        glVertex2f(0.6f, -0.5f);
+        glVertex2f(-0.6f, -0.5f);
+
+        glEnd();
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------

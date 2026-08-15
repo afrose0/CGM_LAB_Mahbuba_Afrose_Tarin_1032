@@ -1,16 +1,18 @@
-# Lab Assignment 1
+# Lab Assignment 2
 
-## OpenGL Magenta Window
+## Green Rectangle Using 6 Vertices
 
 ### Description
 
-This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**.
+This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**. It displays a green rectangle made using **6 vertices (2 triangles)** on a yellow background.
 
 ### Features
 
 - Window size: **800 × 600**
 - Window title: **Mahbuba Afrose Tarin**
-- Background color: **Magenta**
+- Rectangle color: **Green**
+- Background color: **Yellow**
+- Rectangle created using **6 vertices (2 triangles)**
 - Press **M** to close the window
 - Supports window resizing
 
@@ -24,15 +26,15 @@ This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**.
 
 ### Output
 
-The program displays a magenta OpenGL window with the title **Mahbuba Afrose Tarin**. Pressing **M** closes the window.
+The program displays a **green rectangular shape** on a **yellow background**. The rectangle is created using **two triangles with a total of six vertices**. Pressing **M** closes the window.
 
 ### Screenshot
 
-Added two screenshots one for code and one for the window 
+Added two screenshots: one for the **code** and one for the **window output**.
 
 ### Author
 
-**Mahbuba Afrose Tarin**
+**Mahbuba Afrose Tarin**  
 **ID: 1032**
 
 ---
@@ -54,13 +56,13 @@ pacman -S base-devel
 pacman -S gcc
 ```
 
-- Add the MSYS2 `bin` folder containing `g++.exe` and `make.exe` to the system PATH. For example:
+- Add the MSYS2 `bin` folder containing `g++.exe` and `make.exe` to the system PATH:
 
 ```text
 C:\msys64\usr\bin
 ```
 
-- Run the following command in the terminal:
+- Run:
 
 ```bash
 make win
@@ -68,11 +70,11 @@ make win
 
 - The `.exe` file will be generated inside the **build** folder.
 
-- If the code does not run, check the OpenGL version by installing **GLview** from [http://www.realtech-vr.com/home/glview](http://www.realtech-vr.com/home/glview). The system should support **OpenGL 3.3 or above**.
+- If the code does not run, check the OpenGL version using **GLview** from [http://www.realtech-vr.com/home/glview](http://www.realtech-vr.com/home/glview). The system should support **OpenGL 3.3 or above**.
 
 ## 2. Linux
 
-- Install the GLFW development library using:
+- Install the GLFW development library:
 
 ```bash
 sudo apt-get install libglfw3-dev
