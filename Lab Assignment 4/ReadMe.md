@@ -32,7 +32,7 @@ The program displays a **cyan-colored square** on a **white background** with a 
 
 ### Screenshot
 
-![Cyan Square with Magenta Triangle](ss/squar%20and%20circle.png)
+![Cyan Square with Magenta Triangle](ss/ss.png)
 
 ### Author
 
@@ -107,7 +107,7 @@ Lab Assignment 4/
 │   └── main.cpp
 │
 ├── ss/
-│   └── squar and circle.png
+│   └── ss.png
 │
 ├── Makefile
 └── ReadMe.md
