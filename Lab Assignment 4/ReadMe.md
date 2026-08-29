@@ -4,7 +4,7 @@
 
 ### Description
 
-This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**. It displays a cyan-colored square on a white background with a magenta equilateral triangle on top. The triangle shares the two top corner points of the square.
+This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**. It displays a cyan-colored square on a white background with a magenta equilateral triangle on top. The triangle shares two corner points of the square.
 
 ### Features
 
@@ -28,11 +28,9 @@ This project creates an OpenGL window using **C++**, **GLFW**, and **GLAD**. It 
 
 ### Output
 
-The program displays a **cyan-colored square** on a **white background** with a **magenta equilateral triangle** on top. The triangle shares the two top corners of the square. The window title is **Mahbuba Afrose Tarin**. Pressing **M** closes the window.
+The program displays a **cyan-colored square** on a **white background** with a **magenta equilateral triangle** on top. The triangle shares the two top corner points of the square. The window title is **Mahbuba Afrose Tarin**. Pressing **M** closes the window.
 
 ### Screenshot
-
-#### Output
 
 ![Cyan Square with Magenta Triangle](ss/squar%20and%20circle.png)
 
@@ -58,3 +56,71 @@ The program displays a **cyan-colored square** on a **white background** with a 
 ```bash
 pacman -S base-devel
 pacman -S gcc
+```
+
+- Add the MSYS2 `bin` folder containing `g++.exe` and `make.exe` to the system PATH. For example:
+
+```text
+C:\msys64\usr\bin
+```
+
+- Run the following command in the terminal:
+
+```bash
+make win
+```
+
+- The `.exe` file will be generated inside the **build** folder.
+
+- If the code does not run, check the OpenGL version by installing **GLview** from [http://www.realtech-vr.com/home/glview](http://www.realtech-vr.com/home/glview). The system should support **OpenGL 3.3 or above**.
+
+## 2. Linux
+
+- Install the GLFW development library using:
+
+```bash
+sudo apt-get install libglfw3-dev
+```
+
+- Create **build** and **lib** folders in the Code Repository.
+
+- Run:
+
+```bash
+make linux
+```
+
+- The executable file will be generated inside the **build** folder.
+
+---
+
+# Folder Structure
+
+```text
+Lab Assignment 4/
+│
+├── build/
+├── include/
+├── lib/
+├── src/
+│   ├── glad.c
+│   └── main.cpp
+│
+├── ss/
+│   └── squar and circle.png
+│
+├── Makefile
+└── ReadMe.md
+```
+
+---
+
+# Assignment Requirements
+
+- Display a **cyan-colored square**.
+- Use a **white background**.
+- Place a **magenta triangle** on top of the square.
+- The triangle must share **two corner points** of the square.
+- The triangle is an **equilateral triangle**.
+- Set the OpenGL window title to **Mahbuba Afrose Tarin**.
+- Close the window when the **M** key is pressed.
